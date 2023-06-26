@@ -60,6 +60,10 @@ img {
     }
 }
 
+@media screen and (max-width: 1157px){
+    .container-for-icons {
+    display: none;}
+}
 
 .visually-hidden {
 	position: absolute;
