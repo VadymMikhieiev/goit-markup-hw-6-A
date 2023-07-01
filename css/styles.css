@@ -60,10 +60,6 @@ img {
     }
 }
 
-@media screen and (max-width: 1157px){
-    .container-for-icons {
-    display: none;}
-}
 
 .visually-hidden {
 	position: absolute;
@@ -347,6 +343,8 @@ line-height: 0;
  }
 }
 
+
+
 .hero-title {color: white;
              font-size: 36px; 
              line-height: 1.11;
@@ -433,6 +431,12 @@ line-height: 0;
    url(../images/hero/hero-desk-2x.jpg);
  }
 }
+
+@media screen and (max-width: 1157px){
+    .container-for-icons {
+    display: none;}
+}
+
 
 .button-text {color: white;
     font-weight: 500;
