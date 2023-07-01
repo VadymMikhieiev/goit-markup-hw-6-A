@@ -190,9 +190,6 @@ padding: 0;
 line-height: 0;
 }
 
- /* ПОЛОСКА В Хедере под портфолио */
-
-
  .poloska::after {
     content: '';
     position: absolute;
@@ -343,8 +340,6 @@ line-height: 0;
  }
 }
 
-
-
 .hero-title {color: white;
              font-size: 36px; 
              line-height: 1.11;
@@ -432,11 +427,12 @@ line-height: 0;
  }
 }
 
-@media screen and (max-width: 1157px){
-    .container-for-icons {
-    display: none;}
-}
 
+@media screen and (max-width: 1158px){
+    .container-for-icons {
+        visibility: hidden;}
+}
+ 
 
 .button-text {color: white;
     font-weight: 500;
@@ -456,6 +452,18 @@ line-height: 0;
         color: var(--zagolovok);
         margin-bottom: 72px; 
 }
+
+@media screen and (max-width:768px){
+    .feature-list {flex-direction: column;}
+}
+
+
+@media screen (min-width: 428px){
+    .list {
+        text-align: center;
+        }
+}
+    
 
 .features-heading {font-weight: 500;
         font-size: 20px;
@@ -577,6 +585,8 @@ gap: 40px;}
 
 
 .features {padding: 120px 0;}
+
+
 
 .feature-list {display: flex;
                 gap: 24px;}
@@ -996,6 +1006,8 @@ gap: 40px;}
 .button-privacy-policy:focus {background-color: #404BBF;}
 
 .text-exept {margin-left: 8px;}
+
+
 
 
 
