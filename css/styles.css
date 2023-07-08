@@ -480,7 +480,6 @@ line-height: 0;
     }
 }
 
-
     /* На планшетах и десктопах */
 
 @media screen and (min-width: 768px){
@@ -492,8 +491,6 @@ line-height: 0;
 .features {
         padding: 120px 0;
     }
-
-    
 
     /* На мобильных и планшетах */
 @media screen and (max-width: 1158px){
@@ -521,15 +518,33 @@ line-height: 0;
         flex-wrap: wrap;}
     }
 
-     /* для таблетки  */
-/* @media screen and (min-width: 768px) and (max-width: 1157px){
-    .images-main-telephone-ipad {
-        flex-wrap: wrap;
-        row-gap: 64px;
-        column-gap: 24px;
-        justify-content: center;}
-    } */
 
+
+     /* иконки на планшет?  */
+/* @media screen and (max-width: 768px){
+    .images-main-telephone-ipad {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     gap: 0;
+     row-gap: 64px;}
+} */
+
+/* @media screen and (max-width: 768px){
+.social-media-element {
+    width: calc((100% - 24px) / 2);}
+} */
+
+
+/* 
+@media screen and (max-width:768px){
+    .feature-list {
+        flex-direction: column;
+    }
+} */
+    
 .feature-list {
     display: flex;
     gap: 24px;
@@ -543,6 +558,8 @@ line-height: 0;
     .first-element-spiska {
         width: calc((100% - 24px) / 2);} 
     }
+
+    
                 /* our team секция */
         
 
