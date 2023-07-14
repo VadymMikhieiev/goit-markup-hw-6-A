@@ -647,7 +647,8 @@ line-height: 0;
     display: flex;
     gap: 40px;}
 
-.logo-link {gap: 40px;
+.logo-link {
+    gap: 40px;
              }
 
              
@@ -723,24 +724,30 @@ line-height: 0;
         background-color:var(--zagolovok);
         }
 
-@media screen and (max-width: 768px) {
-            .div-footer-extra {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-        }
-    }
+
 
 .footer-special {
     margin-bottom: 16px;
 }
+
+@media screen and (max-width:768px){
+    .footer-special {
+        text-align: center;
+    }  
+}
+
 
 .text-footer {color: #F4F4FD;
     width: 264px;
     height: 72px;
 }
 
+@media screen and (max-width:768px) {
+        .text-footer{
+            text-align: center;
+        }
+    }
+    
 .borders {box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);}
 
 .social-media {display: flex;
@@ -842,28 +849,40 @@ line-height: 0;
                           color: #404bbf;
                           }
 
-.link-logos-brands:focus {border-color: #404bbf;
-                          color: #404bbf;
-                          }
+.link-logos-brands:focus {
+    border-color: #404bbf;
+    color: #404bbf;
+    }
 
-.icons-brand {fill: currentColor;}
+.icons-brand {
+    fill: currentColor;
+}
 
-
-                    /* FOOTER EXTRA*/
 
                     
-.div-footer-extra {display: flex;
-    align-items: baseline;
+.div-footer-extra {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
      }
 
-.social-media-footer {margin-right: 120px;}
+.social-media-footer {
+    margin-right: 120px;
+}
 
-.text-footeer-extra {font-weight: 500;
+
+.text-footer-extra {font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--five-f-color);
     margin-bottom: 16px;}
+
+@media screen and (max-width:768px){
+    .text-footer-extra {
+        text-align: center;
+    }
+}
 
 .social-media-settings {display: flex;
         justify-content: center;
@@ -977,8 +996,10 @@ line-height: 0;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container-na-overlay {position: relative;
-    overflow: hidden; }
+.container-na-overlay {
+    position: relative;
+    overflow: hidden; 
+}
  
 .cross {transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
@@ -1178,4 +1199,3 @@ line-height: 0;
 
 
 
-    
