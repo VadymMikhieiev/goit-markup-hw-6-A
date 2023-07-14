@@ -47,6 +47,10 @@ img {
     padding: 0 16px;   
 }
 
+.conteiner-dlya-brands {
+    padding-bottom: 120px;
+}
+
 @media screen and (min-width: 768px){
     .container {
         max-width: 768px;
@@ -467,21 +471,6 @@ line-height: 0;
     }  
 }
 
-.features-heading {font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: var(--light-color);
-        margin-bottom: 8px;
-        white-space: nowrap;
-}
-
-@media screen and (max-width: 767px) {
-    .features-heading {
-        text-align: center;
-    }
-}
-
 
 
         /* На планшетах и десктопах */
@@ -496,12 +485,13 @@ line-height: 0;
         padding: 120px 0;
     }
 
+.features-heading {font-family: Roboto;}
+
         /* На мобильных и планшетах */
 @media screen and (max-width: 1158px){
     .features {
         padding-top: 96px;}
     .features-heading {
-        font-family: Roboto;
         font-style: normal;
         font-weight: 500;
         line-height: 40px;
@@ -511,6 +501,21 @@ line-height: 0;
     .feature-list {
         padding-left: 16px;}
     }
+    .features-heading {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--light-color);
+        margin-bottom: 8px;
+        white-space: nowrap;
+}
+           /* На мобильном */
+@media screen and (max-width: 767px) {
+    .features-heading {
+        text-align: center;
+    }
+}
 
         /* третья секция Только на Десктопах*/
 @media screen and (max-width:1158px) {
@@ -519,12 +524,12 @@ line-height: 0;
     }
 }
 
-
+                  /* На мобильном */
 @media screen and (max-width:768px){
     .images {
         flex-direction: column;
         gap: 72px;
-        align-items: c;
+        align-items: center;
     }
 }
     
@@ -567,15 +572,13 @@ line-height: 0;
 
 .our-team {
     background-color: #F4F4FD;
-    padding: 120px 0;}
-
+    padding: 120px 0;
+}
+    
 .workers {
     background-color: #FFFFFF;
 }
 
-.footer {
-    background-color:var(--zagolovok);
-}
 
 
                  /* PORTFOLIO*/
@@ -704,7 +707,8 @@ line-height: 0;
         width: 264px;
     }
 
-@media screen and (){
+            
+@media screen and (min-width:1158px){
     .worker {
         width: calc((100% - 72px) / 4);}    
 }
@@ -716,9 +720,20 @@ line-height: 0;
             }
 
 .footer {padding: 100px 0;
+        background-color:var(--zagolovok);
         }
 
-.footer-special {margin-bottom: 16px;
+@media screen and (max-width: 768px) {
+            .div-footer-extra {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+        }
+    }
+
+.footer-special {
+    margin-bottom: 16px;
 }
 
 .text-footer {color: #F4F4FD;
@@ -751,20 +766,37 @@ line-height: 0;
 
                      /* 5 section BRAND LOGOS*/
 
-.brand-logos {padding-top: 120px;
-            padding-bottom: 120px;}
+             /* На планшетах и десктопах */
+/* @media screen and (max-width: 1158px){
+    .brand-logos {
+        padding-bottom: 96px;
+    }
+} */
 
-.zagolovok-for-brands {font-size: 36px;
+/* @media screen and (max-width:1158px){
+    .brand-logos {padding-bottom: 120px;
+    }
+}     */
+
+
+/* .brand-logos {padding-top: 120px;
+            } */
+
+.zagolovok-for-brands {
+                    font-size: 36px;
                     line-height: 1.11;
                     color:var(--footer);
                     margin-bottom: 72px;
-                    text-align: center;}
+                    text-align: center;
+                }
+
 
            /* на деск топах */
 @media screen and (min-width:1158px){
 .spisok-brands {
     display: flex;
     gap: 24px;
+    margin-bottom: 120px;
     }
 }
 
@@ -998,12 +1030,26 @@ line-height: 0;
     border: none;
     border-radius: 4px;}
 
+@media screen and (max-width: 768px) {
+    .forma {
+        flex-direction: column;
+    }
+}
+
 .knopka:hover {background-color: #404BBF;}
 .knopka:focus {background-color: #404BBF;}
 
 .knopka-svg {margin-left: 16px;}
 
 .div-v-konce-footer {margin-left:auto;}
+
+@media screen and (max-width: 768px) {
+    .div-v-konce-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 
 
 /*проверка модального окна*/
