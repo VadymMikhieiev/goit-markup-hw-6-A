@@ -732,19 +732,23 @@ line-height: 0;
 
 @media screen and (max-width:768px){
     .footer-special {
-        text-align: center;
+display: block;
+margin: 0 auto;
+text-align: center;
     }  
 }
 
 
-.text-footer {color: #F4F4FD;
+.text-footer {
+    color: #F4F4FD;
     width: 264px;
     height: 72px;
 }
 
 @media screen and (max-width:768px) {
         .text-footer{
-            text-align: center;
+            margin-left: 80px;
+            margin-right: 80px;
         }
     }
     
@@ -858,17 +862,36 @@ line-height: 0;
     fill: currentColor;
 }
 
-
-                    
-.div-footer-extra {
+    
+.div-footer-extra{
     display: flex;
     align-items: center;
-    flex-direction: column;
-     }
-
-.social-media-footer {
-    margin-right: 120px;
 }
+
+@media screen and (max-width:768px){    
+    .div-footer-extra {
+    flex-direction: column;
+    gap:72px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px){
+    .div-footer-extra {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 72px;
+        /* max-width: 550px; */
+    }
+}
+
+@media screen and (min-width:1158px){
+    .social-media-footer {
+        padding-right: 120px;
+    }
+    
+}
+
+
 
 
 .text-footer-extra {font-weight: 500;
@@ -1057,12 +1080,25 @@ line-height: 0;
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1157px){
+    .forma {
+        column-gap: 24px;
+    }
+}
+
 .knopka:hover {background-color: #404BBF;}
 .knopka:focus {background-color: #404BBF;}
 
 .knopka-svg {margin-left: 16px;}
 
-.div-v-konce-footer {margin-left:auto;}
+
+
+
+@media screen and (min-width:1158px){
+    .div-v-konce-footer {
+        margin-left:auto;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .div-v-konce-footer {
