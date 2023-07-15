@@ -183,6 +183,13 @@ img {
     padding-bottom: 24px;
 }
 
+@media screen and (min-width:1158px) {
+    .logo-link {
+        padding-bottom: 24px;
+    }
+    
+}
+
 .mobile-menu-open-icon {
     stroke:#2e2f42;
 }
@@ -725,10 +732,6 @@ line-height: 0;
         }
 
 
-
-.footer-special {
-    margin-bottom: 16px;
-}
 
 @media screen and (max-width:768px){
     .footer-special {
