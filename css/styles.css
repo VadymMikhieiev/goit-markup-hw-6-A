@@ -44,13 +44,19 @@ img {
 .container {
     margin: 0 auto;
     max-width: 428px; 
-    padding: 0 16px;   
+    padding: 0 16px;  
 }
 
 .conteiner-dlya-brands {
     padding-bottom: 120px;
 }
 
+@media screen and (max-width: 1126px){
+    .conteiner-dlya-brands {
+        padding-top: 96px;
+    }
+    
+}
 @media screen and (min-width: 768px){
     .container {
         max-width: 768px;
@@ -61,6 +67,7 @@ img {
     .container { 
         max-width: 1158px;
         padding: 0 15px;
+        padding-top: 120px;
     }
 }
 
@@ -1236,8 +1243,3 @@ text-align: center;
 .button-privacy-policy:focus {background-color: #404BBF;}
 
 .text-exept {margin-left: 8px;}
-
-
-
-
-
