@@ -878,15 +878,16 @@ text-align: center;
 @media screen and (min-width: 768px) and (max-width: 1157px){
     .div-footer-extra {
         flex-wrap: wrap;
-        justify-content: center;
-        row-gap: 72px;
-        /* max-width: 550px; */
+        /* justify-content: center; */
+        gap: 72px 24px;
+        width: 556px; 
     }
 }
 
 @media screen and (min-width:1158px){
     .social-media-footer {
         padding-right: 120px;
+        margin-right: 24px;
     }
     
 }
