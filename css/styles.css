@@ -531,7 +531,7 @@ line-height: 0;
     .features-heading {
         font-style: normal;
         font-size: 36px;
-        font-weight: 500;
+        font-weight: 700;
         line-height: 1.2;
         letter-spacing: 0.72px;
         text-transform: capitalize;
@@ -588,7 +588,7 @@ line-height: 0;
 
 .feature-list {
     display: flex;
-    gap: 24px;
+    gap: 72px;
     }
     
               /* Только на планшетах */
@@ -1140,6 +1140,11 @@ text-align: center;
     border: none;
     border-radius: 4px;}
 
+@media screen and (max-width: 768px){
+    .knopka {
+        margin: 0 auto;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .forma {
